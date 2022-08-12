@@ -8,6 +8,6 @@
     <h3><a href="./README.md">English</a>&emsp;|&emsp;<span>简体中文</span></h3>
   </p>
   <p>
-    <img src="https://img.shields.io/github/license/yzz491849417/WindowApiPackage" alt="license">
+    <img src="https://img.shields.io/github/license/MrHulu/WindowApiPackage" alt="license">
   </p>
 </div>
