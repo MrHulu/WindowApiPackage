@@ -1,7 +1,8 @@
 #include <QtTest>
 #include <QFileInfo>
+#include <QCoreApplication>
 
-// add necessary includes here
+// add necessary includes here"
 #include "WinReg/WinRegUtil.h"
 #include <iostream>
 
@@ -22,7 +23,7 @@ void tst_WinRegUtil::test_bootUp()
     auto path = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run";
     WinRegUtil winRegUtil;
 
-    auto ret = winRegUtil.bootUpEnabled("HuluMan");
+    auto ret = winRegUtil.bootUpEnabled("HuluMan", QCoreApplication::applicationFilePath().toStdString());
     QVERIFY(ret);
 
     auto value = winRegUtil.queryCurrent_UserRegValueFromPath(path, "HuluMan");

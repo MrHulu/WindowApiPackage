@@ -4,19 +4,15 @@
 
 using namespace std;
 
-bool WinRegUtil::bootUpEnabled(std::string programName) noexcept
+bool WinRegUtil::bootUpEnabled(std::string programName, std::string programPath) noexcept
 try{
-    // 获取程序绝对路径
-    TCHAR exePath[MAX_PATH];
-    GetModuleFileName(nullptr, exePath, MAX_PATH);
-
     // 检查是否已自启动
     string path = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run";
     auto value = queryCurrent_UserRegValueFromPath(path, programName.c_str());
-    if(exePath != value) {
+    if(programPath != value) {
         // 未启动则设置自启动
         auto hkey = getRegHkey(HKEY_CURRENT_USER, path.c_str());
-        setRegValueFromHKey(hkey, programName.c_str(), exePath);
+        setRegValueFromHKey(hkey, programName.c_str(), programPath.c_str());
     }
     return true;
 

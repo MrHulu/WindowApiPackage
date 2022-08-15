@@ -16,12 +16,13 @@ public:
     /**
      *  @brief 启用开机自启动
      *  @param programName 需要启用开机自启动的程序名称
+     *  @param programPath 需要启用开机自启动的程序的绝对路径
      *  @return 返回结果
      *   -- true 表示成功
      *   -- false 表示失败
      *  @note 参数programName不能带有后缀 .exe
      */
-    bool bootUpEnabled(std::string programName) noexcept;
+    bool bootUpEnabled(std::string programName, std::string programPath) noexcept;
 
     /**
      *  @brief 取消开机自启动
