@@ -78,3 +78,53 @@ HKEY WinRegUtil::getRegHkey(HKEY regType, const char *regPath)
     else
         throw "open Reg fail";
 }
+
+std::string WinRegUtil::queryClasses_RootRegValueFromPath(std::string path, const char *name) noexcept
+{
+    return queryRegValueFromPath(HKEY_CLASSES_ROOT, path, name);
+}
+
+std::string WinRegUtil::queryCurrent_UserRegValueFromPath(std::string path, const char *name) noexcept
+{
+    return queryRegValueFromPath(HKEY_CURRENT_USER, path, name);
+}
+
+std::string WinRegUtil::queryLocal_MachineRegValueFromPath(std::string path, const char *name) noexcept
+{
+    return queryRegValueFromPath(HKEY_LOCAL_MACHINE, path, name);
+}
+
+std::string WinRegUtil::queryUsersRegValueFromPath(std::string path, const char *name) noexcept
+{
+    return queryRegValueFromPath(HKEY_USERS, path, name);
+}
+
+std::string WinRegUtil::queryCurrent_ConfigRegValueFromPath(std::string path, const char *name) noexcept
+{
+    return queryRegValueFromPath(HKEY_CURRENT_CONFIG, path, name);
+}
+
+void WinRegUtil::setClasses_RootRegValueFromPath(std::string path, const char *name, const char *value) noexcept
+{
+    setRegValueFromPath(HKEY_CLASSES_ROOT, path, name, value);
+}
+
+void WinRegUtil::setCurrent_UserRegValueFromPath(std::string path, const char *name, const char *value) noexcept
+{
+    setRegValueFromPath(HKEY_CURRENT_USER, path, name, value);
+}
+
+void WinRegUtil::setLocal_MachineRegValueFromPath(std::string path, const char *name, const char *value) noexcept
+{
+    setRegValueFromPath(HKEY_LOCAL_MACHINE, path, name, value);
+}
+
+void WinRegUtil::setUsersRegValueFromPath(std::string path, const char *name, const char *value) noexcept
+{
+    setRegValueFromPath(HKEY_USERS, path, name, value);
+}
+
+void WinRegUtil::setCurrent_ConfigRegValueFromPath(std::string path, const char *name, const char *value) noexcept
+{
+    setRegValueFromPath(HKEY_CURRENT_CONFIG, path, name, value);
+}
