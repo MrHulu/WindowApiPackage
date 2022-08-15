@@ -26,7 +26,7 @@
 
 ## System Display Infomation
 
-<img src="./Data/images/SystmDisplayInfo.png" alt="Display">
+<img src="./Data/images/SystemDisplayInfo.png" alt="Display">
 
 - [Scale and layout](./Src/WinSystemInfo/WinSystemDisplayInfo.h "WinSystemDisplayInfoUtil")
 - [Display resolution](./Src/WinSystemInfo/WinSystemDisplayInfo.h "WinSystemDisplayInfoUtil")
