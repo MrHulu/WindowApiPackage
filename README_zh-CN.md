@@ -17,10 +17,20 @@
 
 ## 功能介绍
 
-- [WinReg](#WinReg)
+- [注册表操作](#注册表操作)
+- [系统显示信息](#系统显示信息)
 
-## WinReg
+## 注册表操作
 
 - [注册表查询](./Src/WinReg/WinRegUtil.h "WinRegUtil")
 - [注册表修改](./Src/WinReg/WinRegUtil.h "WinRegUtil")
 - [系统开机, 程序自启动](./Src/WinReg/WinRegUtil.h. "WinRegUtil")
+
+## 系统显示信息
+
+<img src="./Data/images/SystmDisplayInfo.png" alt="显示">
+
+- [缩放与布局](./Src/WinSystemInfo/WinSystemDisplayInfo.h "WinSystemDisplayInfoUtil")
+- [显示分辨率](./Src/WinSystemInfo/WinSystemDisplayInfo.h "WinSystemDisplayInfoUtil")
+- [显示方向](./Src/WinSystemInfo/WinSystemDisplayInfo.h "WinSystemDisplayInfoUtil")
+

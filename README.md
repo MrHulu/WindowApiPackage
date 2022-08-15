@@ -15,10 +15,19 @@
 
 ## Function Introduction
 
-- [WinReg](#WinReg)
+- [Registry Operations](#Registry Operations)
+- [System Display Infomation](#System Display Infomation)
 
-## WinReg
+## Registry Operations
 
 - [Registry Search](./Src/WinReg/WinRegUtil.h "WinRegUtil")
 - [Registry Modification](./Src/WinReg/WinRegUtil.h "WinRegUtil")
 - [System boot, program self-start](./Src/WinReg/WinRegUtil.h. "WinRegUtil")
+
+## System Display Infomation
+
+<img src="./Data/images/SystmDisplayInfo.png" alt="Display">
+
+- [Scale and layout](./Src/WinSystemInfo/WinSystemDisplayInfo.h "WinSystemDisplayInfoUtil")
+- [Display resolution](./Src/WinSystemInfo/WinSystemDisplayInfo.h "WinSystemDisplayInfoUtil")
+- [Display orientation](./Src/WinSystemInfo/WinSystemDisplayInfo.h "WinSystemDisplayInfoUtil")
