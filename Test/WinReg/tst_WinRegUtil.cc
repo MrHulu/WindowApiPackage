@@ -23,18 +23,18 @@ void tst_WinRegUtil::test_bootUp()
     auto path = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run";
     WinRegUtil winRegUtil;
 
-    auto ret = winRegUtil.bootUpEnabled("HuluMan", QCoreApplication::applicationFilePath().toStdString());
+    auto ret = winRegUtil.BootUpEnabled("HuluMan", QCoreApplication::applicationFilePath().toStdString());
     QVERIFY(ret);
 
-    auto value = winRegUtil.queryCurrent_UserRegValueFromPath(path, "HuluMan");
+    auto value = winRegUtil.QueryCurrent_UserRegValueFromPath(path, "HuluMan");
     QFileInfo target(QString::fromStdString(value));
     QFileInfo source(QCoreApplication::applicationFilePath());
     QCOMPARE(target.absoluteFilePath(), source.absoluteFilePath());
 
-    ret = winRegUtil.bootUpDisabled("HuluMan");
+    ret = winRegUtil.BootUpDisabled("HuluMan");
     QVERIFY(ret);
 
-    value = winRegUtil.queryCurrent_UserRegValueFromPath(path, "HuluMan");
+    value = winRegUtil.QueryCurrent_UserRegValueFromPath(path, "HuluMan");
     QCOMPARE(value, "");
 }
 

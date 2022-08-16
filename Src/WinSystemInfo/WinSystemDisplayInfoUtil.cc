@@ -13,25 +13,25 @@ WinSystemDisplayInfoUtil::WinSystemDisplayInfoUtil()
     EnumDisplaySettings(m_monitorInfo.szDevice, ENUM_CURRENT_SETTINGS, &m_devMode);
 }
 
-float WinSystemDisplayInfoUtil::scaleAndLayout() noexcept
+float WinSystemDisplayInfoUtil::ScaleAndLayout() noexcept
 {
     auto w = m_monitorInfo.rcMonitor.right - m_monitorInfo.rcMonitor.left;
-    return landScapeResolution() / w;
+    return LandScapeResolution() / w;
 }
 
-int WinSystemDisplayInfoUtil::landScapeResolution() noexcept
+int WinSystemDisplayInfoUtil::LandScapeResolution() noexcept
 {
     return m_devMode.dmPelsWidth;
 }
 
-int WinSystemDisplayInfoUtil::portraitResolution() noexcept
+int WinSystemDisplayInfoUtil::PortraitResolution() noexcept
 {
     return m_devMode.dmPelsHeight;
 }
 
-bool WinSystemDisplayInfoUtil::displayOrientation() noexcept
+bool WinSystemDisplayInfoUtil::DisplayOrientation() noexcept
 {
-    auto w = landScapeResolution();
-    auto h = portraitResolution();
+    auto w = LandScapeResolution();
+    auto h = PortraitResolution();
     return (w >= h) ? true : false;
 }

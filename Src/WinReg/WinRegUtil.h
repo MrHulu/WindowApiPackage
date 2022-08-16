@@ -22,7 +22,7 @@ public:
      *   -- false 表示失败
      *  @note 参数programName不能带有后缀 .exe
      */
-    bool bootUpEnabled(std::string programName, std::string programPath) noexcept;
+    bool BootUpEnabled(std::string programName, std::string programPath) noexcept;
 
     /**
      *  @brief 取消开机自启动
@@ -32,7 +32,7 @@ public:
      *   -- false 表示失败
      *  @note 参数programName不能带有后缀 .exe
      */
-    bool bootUpDisabled(std::string programName) noexcept;
+    bool BootUpDisabled(std::string programName) noexcept;
 
     //-------------------------------------------------------------------
     // 查询注册表的值
@@ -44,7 +44,7 @@ public:
      *  @param name 需要查询的值对应的注册表的键
      *  @return 返回查询到注册表的值
      */
-    std::string queryRegValueFromHKey(HKEY key, const char* name) noexcept;
+    std::string QueryRegValueFromHKey(HKEY key, const char* name) noexcept;
 
     /**
      *  @brief 通过标准项名和子项路径名查询注册表的值
@@ -53,7 +53,7 @@ public:
      *  @param name 需要查询的值对应的注册表的键
      *  @return 返回查询到注册表的值
      */
-    std::string queryRegValueFromPath(HKEY keyType, std::string path, const char* name) noexcept;
+    std::string QueryRegValueFromPath(HKEY keyType, std::string path, const char* name) noexcept;
 
     /**
      *  @brief 通过子项路径名查询CLASSES_ROOT项注册表的值
@@ -61,7 +61,7 @@ public:
      *  @param name 需要查询的值对应的注册表的键
      *  @return 返回查询到注册表的值
      */
-    std::string queryClasses_RootRegValueFromPath(std::string path, const char* name) noexcept;
+    std::string QueryClasses_RootRegValueFromPath(std::string path, const char* name) noexcept;
 
     /**
      *  @brief 通过子项路径名查询CURRENT_USER项注册表的值
@@ -69,7 +69,7 @@ public:
      *  @param name 需要查询的值对应的注册表的键
      *  @return 返回查询到注册表的值
      */
-    std::string queryCurrent_UserRegValueFromPath(std::string path, const char* name) noexcept;
+    std::string QueryCurrent_UserRegValueFromPath(std::string path, const char* name) noexcept;
 
     /**
      *  @brief 通过子项路径名查询LOCAL_MACHINE项注册表的值
@@ -77,7 +77,7 @@ public:
      *  @param name 需要查询的值对应的注册表的键
      *  @return 返回查询到注册表的值
      */
-    std::string queryLocal_MachineRegValueFromPath(std::string path, const char* name) noexcept;
+    std::string QueryLocal_MachineRegValueFromPath(std::string path, const char* name) noexcept;
 
     /**
      *  @brief 通过子项路径名查询USERS项注册表的值
@@ -85,7 +85,7 @@ public:
      *  @param name 需要查询的值对应的注册表的键
      *  @return 返回查询到注册表的值
      */
-    std::string queryUsersRegValueFromPath(std::string path, const char* name) noexcept;
+    std::string QueryUsersRegValueFromPath(std::string path, const char* name) noexcept;
 
     /**
      *  @brief 通过子项路径名查询CURRENT_CONFIG项注册表的值
@@ -93,7 +93,7 @@ public:
      *  @param name 需要查询的值对应的注册表的键
      *  @return 返回查询到注册表的值
      */
-    std::string queryCurrent_ConfigRegValueFromPath(std::string path, const char* name) noexcept;
+    std::string QueryCurrent_ConfigRegValueFromPath(std::string path, const char* name) noexcept;
 
     //-------------------------------------------------------------------
     // 修改注册表的值
@@ -105,7 +105,7 @@ public:
      *  @param name 需要修改的值对应的注册表的键
      *  @param value 需要修改的值
      */
-    void setRegValueFromHKey(HKEY key, const char* name, const char* value) noexcept;
+    void SetRegValueFromHKey(HKEY key, const char* name, const char* value) noexcept;
 
     /**
      *  @brief 通过标准项名和子项路径名修改注册表的值
@@ -114,7 +114,7 @@ public:
      *  @param name 需要修改的值对应的注册表的键
      *  @param value 需要修改的值
      */
-    void setRegValueFromPath(HKEY keyType, std::string path, const char* name, const char* value) noexcept;
+    void SetRegValueFromPath(HKEY keyType, std::string path, const char* name, const char* value) noexcept;
 
     /**
      *  @brief 通过子项路径名修改CLASSES_ROOT注册表的值
@@ -122,7 +122,7 @@ public:
      *  @param name 需要修改的值对应的注册表的键
      *  @param value 需要修改的值
      */
-    void setClasses_RootRegValueFromPath(std::string path, const char* name, const char* value) noexcept;
+    void SetClasses_RootRegValueFromPath(std::string path, const char* name, const char* value) noexcept;
 
     /**
      *  @brief 通过子项路径名修改CURRENT_USER注册表的值
@@ -130,7 +130,7 @@ public:
      *  @param name 需要修改的值对应的注册表的键
      *  @param value 需要修改的值
      */
-    void setCurrent_UserRegValueFromPath(std::string path, const char* name, const char* value) noexcept;
+    void SetCurrent_UserRegValueFromPath(std::string path, const char* name, const char* value) noexcept;
 
     /**
      *  @brief 通过子项路径名修改LOCAL_MACHINE注册表的值
@@ -138,7 +138,7 @@ public:
      *  @param name 需要修改的值对应的注册表的键
      *  @param value 需要修改的值
      */
-    void setLocal_MachineRegValueFromPath(std::string path, const char* name, const char* value) noexcept;
+    void SetLocal_MachineRegValueFromPath(std::string path, const char* name, const char* value) noexcept;
 
     /**
      *  @brief 通过子项路径名修改USER注册表的值
@@ -146,7 +146,7 @@ public:
      *  @param name 需要修改的值对应的注册表的键
      *  @param value 需要修改的值
      */
-    void setUsersRegValueFromPath(std::string path, const char* name, const char* value) noexcept;
+    void SetUsersRegValueFromPath(std::string path, const char* name, const char* value) noexcept;
 
     /**
      *  @brief 通过子项路径名修改CURRENT_CONFIG注册表的值
@@ -154,8 +154,8 @@ public:
      *  @param name 需要修改的值对应的注册表的键
      *  @param value 需要修改的值
      */
-    void setCurrent_ConfigRegValueFromPath(std::string path, const char* name, const char* value) noexcept;
+    void SetCurrent_ConfigRegValueFromPath(std::string path, const char* name, const char* value) noexcept;
 
 private:
-    HKEY getRegHkey(HKEY regType, const char* regPath);
+    HKEY __GetRegHkey(HKEY regType, const char* regPath);
 };
