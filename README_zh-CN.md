@@ -28,7 +28,7 @@
 
 ## 系统显示信息
 
-<img src="./Data/images/SystemDisplayInfo_zh_CN.png" alt="显示">
+<img src="./Data/images/SystemDisplayInfo_zh-CN.png" alt="显示">
 
 - [缩放与布局](./Src/WinSystemInfo/WinSystemDisplayInfoUtil.h "WinSystemDisplayInfoUtil")
 - [显示分辨率](./Src/WinSystemInfo/WinSystemDisplayInfoUtil.h "WinSystemDisplayInfoUtil")
