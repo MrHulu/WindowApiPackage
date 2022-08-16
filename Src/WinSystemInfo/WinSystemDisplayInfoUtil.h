@@ -1,5 +1,6 @@
 #pragma once
 
+
 #include <windows.h>
 
 class WinSystemDisplayInfoUtil
@@ -38,7 +39,6 @@ public:
     bool DisplayOrientation() noexcept;
 
 private:
-    MONITORINFOEX m_monitorInfo;
-    DEVMODE m_devMode;
+    MONITORINFOEX __GetMonitorInfo();
+    DEVMODE  __GetDevMode();
 };
-
