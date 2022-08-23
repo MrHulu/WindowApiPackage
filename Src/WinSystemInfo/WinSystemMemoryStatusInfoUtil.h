@@ -60,6 +60,34 @@ public:
     */
     uint GetMemoryUsege() const;
 
+    /**
+    * @brief 获取物理总内存大小
+    * @return 返回物理总内存字节数量
+    * @warning 该函数会抛出std::runtime_error的异常，请注意捕获，捕获后调用GetLastError()以获取更多的错误信息
+    */
+    ulonglong GetPhysicalTotalMemorySize() const;
+
+    /**
+    * @brief 获取物理可用的内存大小
+    * @return 返回物理可用内存字节数量
+    * @warning 该函数会抛出std::runtime_error的异常，请注意捕获，捕获后调用GetLastError()以获取更多的错误信息
+    */
+    ulonglong GetPhysicalAvailableMemorySize() const;
+
+    /**
+    * @brief 获取虚拟总内存大小
+    * @return 返回虚拟总内存字节数量
+    * @warning 该函数会抛出std::runtime_error的异常，请注意捕获，捕获后调用GetLastError()以获取更多的错误信息
+    */
+    ulonglong GetVirtualTotalMemorySize() const;
+
+    /**
+    * @brief 获取虚拟可用的内存大小
+    * @return 返回虚拟可用内存字节数量
+    * @warning 该函数会抛出std::runtime_error的异常，请注意捕获，捕获后调用GetLastError()以获取更多的错误信息
+    */
+    ulonglong GetVirtualAvailableMemorySize() const;
+
 private:
     MEMORYSTATUSEX __GetMemotryStatus() const;
     PERFORMANCE_INFORMATION __GetPreformanceInfo() const;

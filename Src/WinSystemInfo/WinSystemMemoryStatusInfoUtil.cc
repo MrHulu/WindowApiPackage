@@ -48,6 +48,30 @@ uint WinSystemMemoryStatusInfoUtil::GetMemoryUsege() const
     return status.dwMemoryLoad;
 }
 
+ulonglong WinSystemMemoryStatusInfoUtil::GetPhysicalTotalMemorySize() const
+{
+    auto status = __GetMemotryStatus();
+    return status.ullTotalPhys;
+}
+
+ulonglong WinSystemMemoryStatusInfoUtil::GetPhysicalAvailableMemorySize() const
+{
+    auto status = __GetMemotryStatus();
+    return status.ullAvailPhys;
+}
+
+ulonglong WinSystemMemoryStatusInfoUtil::GetVirtualTotalMemorySize() const
+{
+    auto status = __GetMemotryStatus();
+    return status.ullTotalVirtual;
+}
+
+ulonglong WinSystemMemoryStatusInfoUtil::GetVirtualAvailableMemorySize() const
+{
+    auto status = __GetMemotryStatus();
+    return status.ullAvailVirtual;
+}
+
 MEMORYSTATUSEX WinSystemMemoryStatusInfoUtil::__GetMemotryStatus() const
 {
     MEMORYSTATUSEX status = {0};
