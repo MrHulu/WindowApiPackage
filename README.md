@@ -34,8 +34,8 @@
 
 ## Task Manager Memory
 
-<img src="./Data/images/Memory_zh-CN.png" alt="Memory">
-<img src="./Data/images/CPU_zh-CN.png" alt="CPU">
+<img src="./Data/images/Memory.png" alt="Memory">
+<img src="./Data/images/CPU.png" alt="CPU">
 
 - [System Handles](./Src/WinSystemInfo/WinSystemMemoryStatusInfoUtil.h "WinSystemMemoryStatusInfoUtil")
 - [System Processes](./Src/WinSystemInfo/WinSystemMemoryStatusInfoUtil.h "WinSystemMemoryStatusInfoUtil")
