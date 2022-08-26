@@ -31,3 +31,19 @@
 - [Scale and layout](./Src/WinSystemInfo/WinSystemDisplayInfoUtil.h "WinSystemDisplayInfoUtil")
 - [Display resolution](./Src/WinSystemInfo/WinSystemDisplayInfoUtil.h "WinSystemDisplayInfoUtil")
 - [Display orientation](./Src/WinSystemInfo/WinSystemDisplayInfoUtil.h "WinSystemDisplayInfoUtil")
+
+## Task Manager Memory
+
+<img src="./Data/images/Memory_zh-CN.png" alt="Memory">
+<img src="./Data/images/CPU_zh-CN.png" alt="CPU">
+
+- [System Handles](./Src/WinSystemInfo/WinSystemMemoryStatusInfoUtil.h "WinSystemMemoryStatusInfoUtil")
+- [System Processes](./Src/WinSystemInfo/WinSystemMemoryStatusInfoUtil.h "WinSystemMemoryStatusInfoUtil")
+- [System Threads](./Src/WinSystemInfo/WinSystemMemoryStatusInfoUtil.h "WinSystemMemoryStatusInfoUtil")
+- [System Cache](./Src/WinSystemInfo/WinSystemMemoryStatusInfoUtil.h "WinSystemMemoryStatusInfoUtil")
+- [System Memory Usage](./Src/WinSystemInfo/WinSystemMemoryStatusInfoUtil.h "WinSystemMemoryStatusInfoUtil")
+- [System Page Pool](./Src/WinSystemInfo/WinSystemMemoryStatusInfoUtil.h "WinSystemMemoryStatusInfoUtil")
+- [System Physical Total Memory](./Src/WinSystemInfo/WinSystemMemoryStatusInfoUtil.h "WinSystemMemoryStatusInfoUtil")
+- [System Physical Available Memory](./Src/WinSystemInfo/WinSystemMemoryStatusInfoUtil.h "WinSystemMemoryStatusInfoUtil")
+- [System Virtual Total Memory](./Src/WinSystemInfo/WinSystemMemoryStatusInfoUtil.h "WinSystemMemoryStatusInfoUtil")
+- [System Virtual Available Memory](./Src/WinSystemInfo/WinSystemMemoryStatusInfoUtil.h "WinSystemMemoryStatusInfoUtil")
