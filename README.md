@@ -47,3 +47,7 @@
 - [System Physical Available Memory](./Src/WinSystemInfo/WinSystemMemoryStatusInfoUtil.h "WinSystemMemoryStatusInfoUtil")
 - [System Virtual Total Memory](./Src/WinSystemInfo/WinSystemMemoryStatusInfoUtil.h "WinSystemMemoryStatusInfoUtil")
 - [System Virtual Available Memory](./Src/WinSystemInfo/WinSystemMemoryStatusInfoUtil.h "WinSystemMemoryStatusInfoUtil")
+
+## Other
+
+- [Check if the program has administrator privileges](./Src/Oter/ProgramPermissionsInfo.h "ProgramPermissionsInfo")

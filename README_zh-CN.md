@@ -50,3 +50,7 @@
 - [系统虚拟总内存](./Src/WinSystemInfo/WinSystemMemoryStatusInfoUtil.h "WinSystemMemoryStatusInfoUtil")
 - [系统虚拟可用内存](./Src/WinSystemInfo/WinSystemMemoryStatusInfoUtil.h "WinSystemMemoryStatusInfoUtil")
 
+## 其他
+
+- [检测程序是否有管理员权限](./Src/Oter/ProgramPermissionsInfo.h "ProgramPermissionsInfo")
+
